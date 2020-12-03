@@ -1,12 +1,12 @@
 # Disaster Response Pipeline Project
 ### Summary
 The repository contains a web application based on python and flask for automatically classification of text messages in a Disaster Response context. 
-The web interface provides new message classification and also a main overview of the used dataset.
+The web interface provides new message classification and also a main overview of the Dataset.
 
 The main components of the app are the following:
-1) ETL Pipeline (process_data.py) Loads the input data, cleans the data and stores it as a database for further processing.
-2) ML Pipeline (train_classifier.py) Loads previous database file, builds a text preprocessing and machine learning pipeline, 
-trains and tunes the best model using GridsearchCV and exports it.
+1) ETL Pipeline (process_data.py) Loads the input data, cleans and stores the data as a database for further processing.
+2) ML Pipeline (train_classifier.py) Loads the database file, then builds a text preprocessing and a machine learning pipeline and finally
+trains and tunes the best model using GridsearchCV.
 3) Flask Web App (run.py) Interactive web app for message classification and main data visualization.
 
 ### Instructions: 
@@ -27,7 +27,7 @@ trains and tunes the best model using GridsearchCV and exports it.
 
 
 ### Requirements:
-The following python must be installed: 
+The following python packages must be installed: 
 * re
 * joblib
 * flask
