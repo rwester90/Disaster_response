@@ -40,6 +40,12 @@ def clean_data(df):
     #Drop duplicated rows
     df=df.drop_duplicates()
     
+    #Drop messages with no binary categorie's values
+    for col in categories.columns:
+        df=df[df[col]<2]
+
+    return df
+    
     return df
     
 def save_data(df, database_filename):
